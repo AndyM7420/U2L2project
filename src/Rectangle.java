@@ -40,7 +40,7 @@ public class Rectangle
    */
 
     // Returns the length of the Rectangle (a "getter" method)
-    public int getLength()
+    public int getLength(int i)
     {
         return length;
     }
@@ -52,7 +52,7 @@ public class Rectangle
     }
 
     // Returns the width of the Rectangle ("getter" method)
-    public int getWidth()
+    public int getWidth(int i)
     {
         return width;
     }
@@ -69,6 +69,11 @@ public class Rectangle
         int area = width * length;
         return area;
     }
+    public int calculatePerimeter()
+    {
+        int perimeter = (length*2)+(width*2);
+        return perimeter;
+    }
 
     // Prints the Rectangle's dimensions
     public void printRectangleInfo()
@@ -77,4 +82,5 @@ public class Rectangle
         System.out.println("It has an area of " + calculateArea());
     }
 }
+
 
